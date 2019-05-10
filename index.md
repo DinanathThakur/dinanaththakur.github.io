@@ -12,6 +12,8 @@ layout: default
 *   Capable of keeping a focused on the tasks and deadlines at hand. Solves immediate crises with solutions that will fit for the long-
 term.
 
+* * *
+
 ## Technical Skills
 
 *   Operating System - Windows, Linux-Ubuntu
@@ -20,17 +22,21 @@ term.
 *   Version Control - SVN, GIT
 *   PHP Framework - Zend, Laravel, Custom-Framework
 
+* * *
+
 ### Experience Summary
 
 | Company                                               | Duration             |
 |:------------------------------------------------------|:---------------------|
-| ![Educational initiatives Pvt. Ltd.](www.ei-india.com) | April 2017 - Present |
-| ![Elanstreet](www.elanstreet.com)                     | Nov 2016 – April 2017|
-| ![Globussoft Technology](www.globussoft.com)          | Dec 2014 – Oct 2016  |
+| [Educational initiatives Pvt. Ltd.](www.ei-india.com) | April 2017 - Present |
+| [Elanstreet](www.elanstreet.com)                     | Nov 2016 – April 2017|
+| [Globussoft Technology](www.globussoft.com)          | Dec 2014 – Oct 2016  |
+
+* * *
 
 #### Project Summary
 
-1.  ![Mindspark](www.mindspark.in) - April 2017 to Present
+1.  [Mindspark](www.mindspark.in) - April 2017 to Present
   -Technologies: PHP-7.1, MongoDB, ElasticSearch, HTML, JavaScript, jQuery, socket.io
   -Description: An E-Learning portal for K-12 Kids who handles 2 Lacs+ students.
   -Team size: 10
