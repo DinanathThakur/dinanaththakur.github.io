@@ -36,12 +36,14 @@ term.
 
 ## Project Summary
 
-1.  [Mindspark](www.mindspark.in) - April 2017 to Present
-  -Technologies: PHP-7.1, MongoDB, ElasticSearch, HTML, JavaScript, jQuery, socket.io
-  -Description: An E-Learning portal for K-12 Kids who handles 2 Lacs+ students.
-  -Team size: 10
-  -Role played: Framework development, created web-postman tool, database design, web-services creation and developed internal management tool.
+1.  [**Mindspark**](www.mindspark.in) - April 2017 to Present
+    -Technologies: PHP-7.1, MongoDB, ElasticSearch, HTML, JavaScript, jQuery, socket.io
+    -Description: An E-Learning portal for K-12 Kids who handles 2 Lacs+ students.
+    -Team size: 10
+    -Role played: Framework development, created web-postman tool, database design, web-services creation and developed internal management tool.
 
-1.  Item two
-1.  Item three
-1.  Item four
+1.  [**Elanstreet**](www.elanstreet.com) - Nov 2016 to April 2017
+    -Technologies: Magento 1.9, MySQL, HTML, JavaScript, jQuery, phantomjs
+    -Description: An online e-commerce fashion site.
+    -Team size: 10
+    -Role played: Post functionality and developed virtual tailor.
