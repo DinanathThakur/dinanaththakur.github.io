@@ -101,3 +101,12 @@ term.
 	* **Description:** Sending and managing push notifications to web browsers as well as mobile devices
 	* **Team size:** 4
 	* **Role played:** Lead developer, Database design, Managing push notifications, Dynamic generation of campaign files
+
+
+## Educational Qualifications
+
+| Examination|School / College|Board / University| Marks|Year|
+|:------------------------------------------------------|:---------------------|
+| B.Tech (CSE) |GIACR Engg. College, Rayagada|BPUT, Odisha|7.18 (CGPA)| 2014 |
+| 12th |Pakur Raj +2 High School, Pakur|JAC, Ranchi|56.4%| 2009 |
+| 10th |Pakur Raj +2 High School, Pakur|JAC, Ranchi|66.8%| 2007 |
