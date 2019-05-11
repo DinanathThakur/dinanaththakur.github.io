@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Professional Summary
+## Summary
 *   **5 years** of IT experience in analysis, design, development, documentation, implementing and testing of software systems in PHP, MySQL, Mongo and Internet technologies.
 *	Strong Knowledge on Application Development using **Software Development Life Cycle SDLC** using various methodologies like **Waterfall, Agile**.
 *	Expertise in working with various PHP technologies including **Zend**, **Laravel**, **Custom Framework**, **WEB SERVICES**.
@@ -14,7 +14,7 @@ layout: default
 
 * * *
 
-## Technical Skills
+## Skill Set
 
 *	Primary Skills: Analysis, Designing, Development, Implementation & Testing.
 *	Languages: PHP
@@ -27,7 +27,7 @@ layout: default
 
 * * *
 
-## Experience Summary
+## Professional Summary
 
 | Company                                               | Duration             |
 |:------------------------------------------------------|:---------------------|
