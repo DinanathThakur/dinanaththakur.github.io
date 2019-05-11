@@ -20,9 +20,9 @@ layout: default
 *	Languages: PHP
 *	Internet Technologies: HTML, javaScript, jQuery, JSON, AJAX & CSS
 *   Database: MySQL, MongoDB
-*   PHP Framework: Zend, Laravel, Custom-Framework
-*   Version Control: SVN, GIT
-*	IDE & GUI: PHPStorm, VSCode, Sublime Text, Net Beans
+*   PHP Framework: Zend, Laravel & Custom-Framework
+*   Version Control: SVN & GIT
+*	IDE & GUI: PHPStorm, VSCode, Sublime Text & Net Beans
 *	Operating System: Windows, Unix & Linux
 
 * * *
