@@ -3,24 +3,27 @@ layout: default
 ---
 
 ## Professional Summary
-<!-- *   4 years 5 months of experience as a Software Engineer. -->
-*   Have ability to Multi-task and develop complex functionalities using PHP programming. Project problem resolution on time and solution design skills and analyzing skills to meet deadlines, have been appreciated by the Clients many times.
-*   Has a very good track record and performed with lot of enthusiasm and contributed maximum efforts to the success of the project that I have handled.
-*   Excellent Team Player with Good Time & Work Management Capability.
-*   Extensive hands on expertise in PHP, MySQL, Laravel framework, Zend Framework, JavaScript, jQuery, Socket.io etc.
-*   Enthusiastic about building new products and services.
-*   Capable of keeping a focused on the tasks and deadlines at hand. Solves immediate crises with solutions that will fit for the long-
-term.
+*   **5 years** of IT experience in analysis, design, development, documentation, implementing and testing of software systems in PHP, MySQL, Mongo and Internet technologies.
+*	Strong Knowledge on Application Development using **Software Development Life Cycle SDLC** using various methodologies like **Waterfall, Agile**.
+*	Expertise in working with various PHP technologies including **Zend**, **Laravel**, **Custom Framework**, **WEB SERVICES**.
+*	Experience in implementing PHP design patterns such as **MVC**, **Singleton**, **Strategy**, and **Business Delegate** in the development of Multi-Tier distributed Enterprise Applications.
+*	Good experience in developing **Web Services**.
+*	Experience in Configuring and deploying applications on LAMP/WAMP server.
+*	Experience with **Use-Case** design, **Class** and **Sequence** diagrams using **UML**.
+*	Excellent team player with good analytical, strategic planning and interpersonal and communication skills. Highly motivated, enthusiastic and self-starter.
 
 * * *
 
 ## Technical Skills
 
-*   Operating System - Windows, Linux-Ubuntu
-*   Technologies - PHP, HTML, CSS, JavaScript, jQuery
+*	Primary Skills: Analysis, Designing, Development, Implementation & Testing.
+*	Languages: PHP
+*	Internet Technologies: HTML, javaScript, jQuery, JSON, AJAX & CSS
 *   Database - MySQL, MongoDB
-*   Version Control - SVN, GIT
 *   PHP Framework - Zend, Laravel, Custom-Framework
+*   Version Control - SVN, GIT
+*	IDE & GUI: PHPStorm, VSCode, Sublime Text, Net Beans
+*	Operating System: Windows, Unix & Linux
 
 * * *
 
