@@ -105,6 +105,7 @@ layout: default
 	* **Team size:** 4
 	* **Role played:** Lead developer, Database design, Managing push notifications, Dynamic generation of campaign files
 
+* * *
 
 ## Educational Qualifications
 
