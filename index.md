@@ -109,8 +109,8 @@ layout: default
 
 ## Educational Qualifications
 
-| Examination|School / College|Board / University| Marks|Year|
-|:------------------------------------------------------|:---------------------|
-| B.Tech (CSE) |GIACR Engg. College, Rayagada|BPUT, Odisha|7.18 (CGPA)| 2014 |
-| 12th |Pakur Raj +2 High School, Pakur|JAC, Ranchi|56.4%| 2009 |
-| 10th |Pakur Raj +2 High School, Pakur|JAC, Ranchi|66.8%| 2007 |
+| Examination	|School / College				|Board / University	| Marks		|Year	|
+|:--------------|-------------------------------|:------------------|:----------|:------|
+| B.Tech (CSE) 	|GIACR Engg. College, Rayagada	|BPUT, Odisha		|7.18 (CGPA)| 2014 	|
+| 12th 			|Pakur Raj +2 High School, Pakur|JAC, Ranchi		|56.4%		| 2009 	|
+| 10th 			|Pakur Raj +2 High School, Pakur|JAC, Ranchi		|66.8%		| 2007 	|
