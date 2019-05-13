@@ -5,8 +5,7 @@ layout: default
 ## Summary
 *   **5 years** of IT experience in analysis, design, development, documentation, implementing and testing of software systems in PHP, MySQL, Mongo and Internet technologies.
 *	Strong Knowledge on Application Development using **Software Development Life Cycle SDLC** using various methodologies like **Waterfall, Agile**.
-*	Expertise in working with various PHP technologies including **Zend**, **Laravel**, **Custom Framework**, **WEB SERVICES**.
-*	Experience in implementing PHP design patterns such as **MVC**, **Singleton**, **Factory**, **Adaptor**, **Strategy**, and **Business Delegate** in the development of Multi-Tier distributed Enterprise Applications.
+*	Experience in implementing PHP design patterns such as **MVC**, **Singleton**, **Factory**, **Adaptor**, and **Strategy**.
 *	Good experience in developing **Web Services**.
 *	Experience in Configuring and deploying applications on LAMP/WAMP server.
 *	Experience with **Use-Case** design, **Class** and **Sequence** diagrams using **UML**.
