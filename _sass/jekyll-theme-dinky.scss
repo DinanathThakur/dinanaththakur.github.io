@@ -152,6 +152,12 @@ img {
   border: 1px solid #ccc;
 }
 
+.img.profile-image  {
+  position: relative;
+  padding: 5px;
+  border: 2px solid #ccc;
+}
+
 p img, .emoji {
   display: inline;
   margin: 0;
