@@ -266,7 +266,7 @@ header ul {
 
 header li {
 	list-style-type: none;
-  width:132px;
+  width:65%;
   height:15px;
 	margin-bottom: 12px;
 	line-height: 1em;
@@ -309,6 +309,14 @@ a.buttons {
 
 a.github {
 	background: url(../images/octocat-small.png) no-repeat 1px;
+}
+
+a.stack_overflow_icon {
+	background: url(../images/so-icon.png) no-repeat 1px;
+}
+
+a.linkedin_profile_icon {
+	background: url(../images/linkedin.png) no-repeat 1px;
 }
 
 a.buttons:hover {
