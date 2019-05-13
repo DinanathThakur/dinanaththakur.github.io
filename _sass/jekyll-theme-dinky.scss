@@ -309,14 +309,17 @@ a.buttons {
 
 a.github {
 	background: url(../images/octocat-small.png) no-repeat 1px;
+  background-size: contain;
 }
 
 a.stack_overflow_icon {
 	background: url(../images/so-icon.png) no-repeat 1px;
+  background-size: contain;
 }
 
 a.linkedin_profile_icon {
 	background: url(../images/linkedin.png) no-repeat 1px;
+  background-size: contain;
 }
 
 a.buttons:hover {
