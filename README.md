@@ -1,7 +1,3 @@
----
-layout: default
----
-
 ## Summary
 *   **4 years 5 months** of IT experience in analysis, design, development, documentation, implementing and testing of software systems in PHP, MySQL, Mongo and Internet technologies.
 *	Strong Knowledge on Application Development using **Software Development Life Cycle SDLC** using various methodologies like **Waterfall, Agile**.
