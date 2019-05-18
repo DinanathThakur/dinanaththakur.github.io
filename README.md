@@ -7,7 +7,7 @@ layout: default
 *	Strong Knowledge on Application Development using **Software Development Life Cycle SDLC** using various methodologies like **Waterfall, Agile**.
 *	Experience in implementing PHP **design patterns**.
 *	Good experience in developing **Web Services**.
-*	Experience in Configuring and deploying applications on LAMP/WAMP server.
+*	Experience in Configuring and deploying applications on **LAMP/WAMP** server.
 *	Experience with **Use-Case** design, **Class** and **Sequence** diagrams using **UML**.
 *	Excellent team player with good analytical, strategic planning and interpersonal and communication skills. Highly motivated, enthusiastic and self-starter.
 
