@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinanath Thakur - Lead Software Engineer</title>
+    <style>
+/* Design System */
+:root {
+  --color-white: rgba(255, 255, 255, 1);
+  --color-black: rgba(0, 0, 0, 1);
+  --color-cream-50: rgba(252, 252, 249, 1);
+  --color-cream-100: rgba(255, 255, 253, 1);
+  --color-gray-200: rgba(245, 245, 245, 1);
+  --color-gray-300: rgba(167, 169, 169, 1);
+  --color-gray-400: rgba(119, 124, 124, 1);
+  --color-slate-500: rgba(98, 108, 113, 1);
+  --color-brown-600: rgba(94, 82, 64, 1);
+  --color-charcoal-700: rgba(31, 33, 33, 1);
+  --color-charcoal-800: rgba(38, 40, 40, 1);
+  --color-slate-900: rgba(19, 52, 59, 1);
+  --color-teal-300: rgba(50, 184, 198, 1);
+  --color-teal-400: rgba(45, 166, 178, 1);
+  --color-teal-500: rgba(33, 128, 141, 1);
+  --color-teal-600: rgba(29, 116, 128, 1);
+  --color-teal-700: rgba(26, 104, 115, 1);
+  --color-teal-800: rgba(41, 150, 161, 1);
+  --color-red-400: rgba(255, 84, 89, 1);
+  --color-red-500: rgba(192, 21, 47, 1);
+  --color-orange-400: rgba(230, 129, 97, 1);
+  --color-orange-500: rgba(168, 75, 47, 1);
+  --color-brown-600-rgb: 94, 82, 64;
+  --color-teal-500-rgb: 33, 128, 141;
+  --color-slate-900-rgb: 19, 52, 59;
+  --color-slate-500-rgb: 98, 108, 113;
+  --color-red-500-rgb: 192, 21, 47;
+  --color-red-400-rgb: 255, 84, 89;
+  --color-orange-500-rgb: 168, 75, 47;
+  --color-orange-400-rgb: 230, 129, 97;
+  --color-bg-1: rgba(59, 130, 246, 0.08);
+  --color-bg-2: rgba(245, 158, 11, 0.08);
+  --color-bg-3: rgba(34, 197, 94, 0.08);
+  --color-bg-4: rgba(239, 68, 68, 0.08);
+  --color-bg-5: rgba(147, 51, 234, 0.08);
+  --color-bg-6: rgba(249, 115, 22, 0.08);
+  --color-bg-7: rgba(236, 72, 153, 0.08);
+  --color-bg-8: rgba(6, 182, 212, 0.08);
+  --color-background: var(--color-cream-50);
+  --color-surface: var(--color-cream-100);
+  --color-text: var(--color-slate-900);
+  --color-text-secondary: var(--color-slate-500);
+  --color-primary: var(--color-teal-500);
+  --color-primary-hover: var(--color-teal-600);
+  --color-primary-active: var(--color-teal-700);
+  --color-secondary: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-secondary-hover: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-secondary-active: rgba(var(--color-brown-600-rgb), 0.25);
+  --color-border: rgba(var(--color-brown-600-rgb), 0.2);
+  --color-btn-primary-text: var(--color-cream-50);
+  --color-card-border: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-card-border-inner: rgba(var(--color-brown-600-rgb), 0.12);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-teal-500);
+  --color-warning: var(--color-orange-500);
+  --color-info: var(--color-slate-500);
+  --color-focus-ring: rgba(var(--color-teal-500-rgb), 0.4);
+  --color-select-caret: rgba(var(--color-slate-900-rgb), 0.8);
+  --focus-ring: 0 0 0 3px var(--color-focus-ring);
+  --focus-outline: 2px solid var(--color-primary);
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-size-xs: 11px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 600;
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --letter-spacing-tight: -0.01em;
+  --space-0: 0;
+  --space-1: 1px;
+  --space-2: 2px;
+  --space-4: 4px;
+  --space-6: 6px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-gray-400-rgb: 119, 124, 124;
+    --color-teal-300-rgb: 50, 184, 198;
+    --color-gray-300-rgb: 167, 169, 169;
+    --color-gray-200-rgb: 245, 245, 245;
+    --color-bg-1: rgba(29, 78, 216, 0.15);
+    --color-bg-2: rgba(180, 83, 9, 0.15);
+    --color-bg-3: rgba(21, 128, 61, 0.15);
+    --color-bg-4: rgba(185, 28, 28, 0.15);
+    --color-bg-5: rgba(107, 33, 168, 0.15);
+    --color-bg-6: rgba(194, 65, 12, 0.15);
+    --color-bg-7: rgba(190, 24, 93, 0.15);
+    --color-bg-8: rgba(8, 145, 178, 0.15);
+    --color-background: var(--color-charcoal-700);
+    --color-surface: var(--color-charcoal-800);
+    --color-text: var(--color-gray-200);
+    --color-text-secondary: rgba(var(--color-gray-300-rgb), 0.7);
+    --color-primary: var(--color-teal-300);
+    --color-primary-hover: var(--color-teal-400);
+    --color-primary-active: var(--color-teal-800);
+    --color-secondary: rgba(var(--color-gray-400-rgb), 0.15);
+    --color-secondary-hover: rgba(var(--color-gray-400-rgb), 0.25);
+    --color-secondary-active: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-border: rgba(var(--color-gray-400-rgb), 0.3);
+    --color-error: var(--color-red-400);
+    --color-success: var(--color-teal-300);
+    --color-warning: var(--color-orange-400);
+    --color-info: var(--color-gray-300);
+    --color-focus-ring: rgba(var(--color-teal-300-rgb), 0.4);
+    --color-btn-primary-text: var(--color-slate-900);
+    --color-card-border: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-card-border-inner: rgba(var(--color-gray-400-rgb), 0.15);
+    --shadow-inset-sm: inset 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+    --color-border-secondary: rgba(var(--color-gray-400-rgb), 0.2);
+    --color-select-caret: rgba(var(--color-gray-200-rgb), 0.8);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: var(--font-size-base);
+}
+
+body {
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Resume Styles */
+.resume-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-lg);
+}
+
+.print-button {
+  position: fixed;
+  top: var(--space-20);
+  right: var(--space-20);
+  background-color: var(--color-primary);
+  color: var(--color-btn-primary-text);
+  border: none;
+  padding: var(--space-12) var(--space-24);
+  border-radius: var(--radius-base);
+  cursor: pointer;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-base);
+  box-shadow: var(--shadow-md);
+  transition: all var(--duration-normal) var(--ease-standard);
+  z-index: 1000;
+}
+
+.print-button:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.print-button:active {
+  background-color: var(--color-primary-active);
+  transform: translateY(0);
+}
+
+/* Header Section */
+.header {
+  background-color: var(--color-bg-1);
+  padding: var(--space-32) var(--space-24);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.header-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-8);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.header .title {
+  font-size: var(--font-size-xl);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-12);
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-16);
+  margin-top: var(--space-16);
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.contact-item svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--color-primary);
+}
+
+.contact-item a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+.contact-item a:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+/* Section Styles */
+.section {
+  padding: var(--space-32) var(--space-24);
+  border-bottom: 1px solid var(--color-card-border);
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-24);
+  padding-bottom: var(--space-12);
+  border-bottom: 2px solid var(--color-primary);
+  display: inline-block;
+}
+
+/* Summary Section */
+.summary-text {
+  font-size: var(--font-size-lg);
+  line-height: 1.7;
+  color: var(--color-text);
+  text-align: justify;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-20);
+}
+
+.skill-category {
+  background-color: var(--color-bg-2);
+  padding: var(--space-20);
+  border-radius: var(--radius-base);
+  border: 1px solid var(--color-card-border);
+  transition: transform var(--duration-normal) var(--ease-standard), box-shadow var(--duration-normal) var(--ease-standard);
+}
+
+.skill-category:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.skill-category h3 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  margin-bottom: var(--space-12);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+}
+
+.skill-tag {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  padding: var(--space-6) var(--space-12);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  border: 1px solid var(--color-card-border);
+}
+
+/* Experience Section */
+.experience-item {
+  margin-bottom: var(--space-32);
+  padding-bottom: var(--space-32);
+  border-bottom: 1px solid var(--color-card-border);
+}
+
+.experience-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-16);
+  flex-wrap: wrap;
+  gap: var(--space-12);
+}
+
+.experience-title {
+  flex: 1;
+}
+
+.experience-title h3 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-4);
+}
+
+.experience-title .role {
+  font-size: var(--font-size-base);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+.experience-period {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+}
+
+.achievements {
+  margin-bottom: var(--space-16);
+}
+
+.achievements ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.achievements li {
+  position: relative;
+  padding-left: var(--space-20);
+  margin-bottom: var(--space-12);
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.achievements li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+}
+
+.tech-stack {
+  background-color: var(--color-bg-3);
+  padding: var(--space-12) var(--space-16);
+  border-radius: var(--radius-base);
+  border-left: 3px solid var(--color-primary);
+}
+
+.tech-stack strong {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+}
+
+.tech-stack span {
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+}
+
+/* Education Section */
+.education-item {
+  background-color: var(--color-bg-5);
+  padding: var(--space-24);
+  border-radius: var(--radius-base);
+  border: 1px solid var(--color-card-border);
+}
+
+.education-item h3 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-8);
+}
+
+.education-item .institution {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-4);
+}
+
+.education-item .year {
+  font-size: var(--font-size-base);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background-color: white;
+  }
+  
+  .resume-container {
+    box-shadow: none;
+    max-width: 100%;
+  }
+  
+  .print-button {
+    display: none;
+  }
+  
+  .section {
+    page-break-inside: avoid;
+  }
+  
+  .experience-item {
+    page-break-inside: avoid;
+  }
+  
+  .header {
+    background-color: #f0f9ff !important;
+  }
+  
+  .skill-category,
+  .tech-stack,
+  .education-item {
+    background-color: #f5f5f5 !important;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .print-button {
+    top: var(--space-12);
+    right: var(--space-12);
+    padding: var(--space-8) var(--space-16);
+    font-size: var(--font-size-sm);
+  }
+  
+  .header {
+    padding: var(--space-24) var(--space-16);
+  }
+  
+  .header h1 {
+    font-size: 28px;
+  }
+  
+  .header .title {
+    font-size: var(--font-size-lg);
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+  
+  .section {
+    padding: var(--space-24) var(--space-16);
+  }
+  
+  .section h2 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .experience-header {
+    flex-direction: column;
+  }
+  
+  .experience-period {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 24px;
+  }
+  
+  .summary-text {
+    font-size: var(--font-size-base);
+    text-align: left;
+  }
+}
+    </style>
+</head>
+<body>
+    <button class="print-button" onclick="window.print()" aria-label="Print Resume">
+        <svg style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 6px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+        </svg>
+        Print / Download
+    </button>
+
+    <div class="resume-container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <h1>Dinanath Thakur</h1>
+                <div class="title">Lead Software Engineer</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Bangalore, India</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <a href="mailto:kumardina023@gmail.com">kumardina023@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>+91 8236064628</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section class="section">
+            <div class="section-content">
+                <h2>Professional Summary</h2>
+                <p class="summary-text">Lead Software Engineer with 11 years of versatile experience in full-stack development, team leadership, and solving complex technical challenges. Proficient in building and deploying high-performance applications using PHP, Python, and cloud platforms. Experienced in designing scalable architectures, guiding teams, and driving CI/CD and DevOps practices within Agile frameworks. Known for improving code quality, streamlining operations, and ensuring product stability across mission-critical projects.</p>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="section">
+            <div class="section-content">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PHP</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Node.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">JavaScript (ES6+)</span>
+                            <span class="skill-tag">jQuery</span>
+                            <span class="skill-tag">AngularJS</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">AJAX</span>
+                            <span class="skill-tag">JSON</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Databases</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Elasticsearch</span>
+                            <span class="skill-tag">Redis</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Symfony</span>
+                            <span class="skill-tag">Laravel</span>
+                            <span class="skill-tag">CodeIgniter</span>
+                            <span class="skill-tag">MERN Stack</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps &amp; Cloud</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Bitbucket</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Jenkins</span>
+                            <span class="skill-tag">CI/CD Pipelines</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Version Control</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">SVN</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>AI-Assisted Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">GitHub Copilot</span>
+                            <span class="skill-tag">Cursor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience -->
+        <section class="section">
+            <div class="section-content">
+                <h2>Professional Experience</h2>
+                
+                <!-- Experience 1 -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>DealerSocket | Solera</h3>
+                            <div class="role">Lead Software Engineer</div>
+                        </div>
+                        <div class="experience-period">Oct 2020 to Present</div>
+                    </div>
+                    <div class="achievements">
+                        <ul>
+                            <li>Led a team of software engineers and delivered multiple projects on time while keeping quality high.</li>
+                            <li>Built a Python-based CLI tool from scratch to migrate Bitbucket to GitHub and moved more than 600 repositories.</li>
+                            <li>Designed and developed a Python microservice using Flask for an internal product used across teams.</li>
+                            <li>Optimized backend APIs and improved how they were consumed in the frontend, achieving nearly 95% better performance and noticeably smoother user experience.</li>
+                            <li>Migrated key applications from AWS to on-premises, improving reliability and cutting operational costs.</li>
+                            <li>Developed automated migration utilities that reduced transition time and saved engineering effort.</li>
+                            <li>Improved overall site performance and Core Web Vitals by optimizing API workflows, frontend rendering, and asset delivery, resulting in faster load times and smoother user interactions.</li>
+                            <li>Reviewed code across teams and helped enforce clean, consistent, and secure coding practices.</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> <span>PHP 7.4, Python, Node.js, React.js, MySQL, Elasticsearch, Redis, AWS, on-prem environments.</span>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Sage Intacct</h3>
+                            <div class="role">Software Engineer</div>
+                        </div>
+                        <div class="experience-period">July 2019 to September 2020</div>
+                    </div>
+                    <div class="achievements">
+                        <ul>
+                            <li>Maintained existing software systems by identifying and correcting software defects.</li>
+                            <li>Optimized software performance by implementing efficient algorithms and code optimizations.</li>
+                            <li>Reduced technical debt by refactoring legacy code for improved maintainability and reduced error rates.</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> <span>PHP-7.2, Oracle, JavaScript, jQuery</span>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Educational Initiatives Pvt. Ltd.</h3>
+                            <div class="role">Software Engineer</div>
+                        </div>
+                        <div class="experience-period">April 2017 to July 2019</div>
+                    </div>
+                    <div class="achievements">
+                        <ul>
+                            <li>Developed a scalable PHP microservice framework for rapid modular development, boosting team efficiency and adaptability.</li>
+                            <li>Created a custom API testing tool from scratch, increasing API quality and reliability.</li>
+                            <li>Implemented a robust offline sync model to ensure data integrity in low-connectivity environments, enhancing user experience.</li>
+                            <li>Designed an intuitive internal admin tool to streamline data management, improving operational efficiency across critical functions.</li>
+                            <li>Contributed to modern full-stack development practices, transitioning towards MERN stack technologies</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> <span>PHP, Python, MongoDB, Elasticsearch, AngularJS, AWS</span>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Elanstreet</h3>
+                            <div class="role">Software Engineer</div>
+                        </div>
+                        <div class="experience-period">Nov 2016 to April 2017</div>
+                    </div>
+                    <div class="achievements">
+                        <ul>
+                            <li>Developed e-commerce features for a fashion website, enhancing user experience and site functionality.</li>
+                            <li>Developed a virtual tailoring tool, boosting customer engagement.</li>
+                            <li>Redesigned product pages, increasing conversion rates and user engagement.</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> <span>Magento 1.9, Python, MySQL, JavaScript, Nodejs</span>
+                    </div>
+                </div>
+
+                <!-- Experience 5 -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div class="experience-title">
+                            <h3>Globussoft Technology</h3>
+                            <div class="role">Software Developer</div>
+                        </div>
+                        <div class="experience-period">Dec 2014 to Nov 2016</div>
+                    </div>
+                    <div class="achievements">
+                        <ul>
+                            <li>Developed multiple admin tools independently, showing strong project ownership.</li>
+                            <li>Refactored codebases for improved system performance and future scalability.</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <strong>Tech Stack:</strong> <span>PHP, Nodejs, MySQL, JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <div class="section-content">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>B.Tech in Computer Science</h3>
+                    <div class="institution">GIACR Engineering College, BPUT, Odisha</div>
+                    <div class="year">Graduated: 2014</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
